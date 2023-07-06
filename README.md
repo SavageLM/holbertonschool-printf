@@ -2,9 +2,9 @@ This is the README. This is a place holder for later.
 # **Project** `\_printf`
 
 ## Introduction
-> Hey there:) Thanks for checking out our first group project. For this we are creating our own printf function following the specs provided and including the other files listed below.
+> Hey there:) Thanks for checking out our first group project. For this we are creating our own printf function following the guidelines provided and the other files listed below.
 
-### Specs
+### Guidelines
 - Allowed editors: vi, vim, emacs
 - All files will be compiled on Ubuntu 20.04 LTS
 - Betty Style
