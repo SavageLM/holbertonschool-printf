@@ -12,4 +12,39 @@
 
 int _printf(const char *format, ...)
 {
+	va_list args;
+	checker_t functions[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{"%", print_percent}
+	};
+	unsigned int i = 0, j = 0;
+
+	va_start(args, format);
+
+	if (format == NULL)
+		return (-1);
+
+	while ((format != NULL) && (format [i]))
+	{
+		j = 0;
+
+		while (j < 5)
+		{
+			if (format[i] == *functions[j].type)
+			{
+				functions[j].print(args);
+			}
+
+			j++;
+		}
+
+		i++;
+	}
+
+	va_end(args);
+
+	return (nump);
 }
