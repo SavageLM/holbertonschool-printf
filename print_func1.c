@@ -63,7 +63,7 @@ int print_string(va_list arg)
 	_putchar('L');
 	_putchar(')');
 
-	return (6)
+	return (6);
 }
 
 /**
