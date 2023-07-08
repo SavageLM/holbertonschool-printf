@@ -38,6 +38,8 @@ int _printf(const char *format, ...)
 				i++;
 			}
 			j = 0;
+			if (format[i] == '\0')
+				return (-1);
 			while (functions[j].type != NULL)
 			{
 				if (format[i] == *functions[j].type)
@@ -47,8 +49,6 @@ int _printf(const char *format, ...)
 				}
 				j++;
 			}
-			if (functions[j].type == NULL)
-				return (-1);
 		}
 		else
 		{
