@@ -18,7 +18,7 @@ typedef struct checker
 {
 	char *type;
 	int (*print)(va_list arg);
-}checker_t;
+} checker_t;
 
 
 #endif
