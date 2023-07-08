@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "_printf.h"
+#include "main.h"
 
 /**
  * _printf- Function that will replicate the std printf function.
@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	checker_t functions[] = {
 		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
+		{"i", print_num},
+		{"d", print_num},
 		{"s", print_string},
 		{"%", print_percent}
 	};

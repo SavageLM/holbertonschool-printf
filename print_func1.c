@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "printf.h"
+#include "main.h"
 
 /**
  * _putchar - writes the character c to stdout
@@ -25,7 +25,7 @@ int print_char(va_list arg)
 {
 	char *letter;
 
-	letter = va_list arg;
+	letter = va_list(arg, int);
 
 	_putchar(letter);
 
@@ -77,5 +77,15 @@ int print_percent(va_list arg)
 	char *percent;
 	int i = 0;
 
-	percent = va_list arg;
+	percent = va_list(arg, int);
+
+	while (percent[i])
+	{
+		if ((percent[i - 1] == "%") && (percent[i] == "%"))
+			_putchar("%");
+		if ((percent[i - 1] == "/") && (percent[i] == "%"))
+			_putchar("%");
+	}
+
+	return (1);
 }
