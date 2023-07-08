@@ -30,19 +30,29 @@ int _printf(const char *format, ...)
 
 	while (format && format[i])
 	{
-		j = 0;
-
-		while (j < 6)
+		if (format[i] == '%')
 		{
-			if (*format == *functions[j].type)
+			i++;
+			j = 0;
+			
+			while (funtions[j].type != NULL)
 			{
-				nump = functions[j].print(args);
+				if (format[i] == *functions[j].type)
+				{
+					nump += functions[j].print(args);
+					break;
+				}
+				j++;
 			}
 
-			j++;
+			if (functions[j].type == NULL)
+				return (-1);
 		}
 
-		i++;
+		else
+		{
+			_putchar(format[i]);
+			nump++;
 	}
 
 	va_end(args);
