@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		{"i", print_num},
 		{"d", print_num},
 		{"s", print_string},
-		{"%", print_percent},
+		{"%", '%'},
 		{NULL, NULL}
 	};
 	unsigned int i = 0, j = 0, nump = 0;
@@ -32,6 +32,8 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
+			if (format[i] == '%')
+				nump += 1;
 			j = 0;
 			while (functions[j].type != NULL)
 			{
