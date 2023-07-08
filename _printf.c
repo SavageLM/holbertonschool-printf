@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 		i++;
 	}
 
-	nump = print_percent(format, args);
+	nump = print_percent(args);
 
 	va_end(args);
 
