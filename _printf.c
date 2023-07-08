@@ -34,6 +34,7 @@ int _printf(const char *format, ...)
 			if (format[i] == '%')
 			{
 				nump += _putchar(format[i]);
+				nump--;
 				i++;
 			}
 			j = 0;
