@@ -17,7 +17,7 @@ void recursenum(int n);
 typedef struct checker
 {
 	char *type;
-	void (*print)(va_list arg);
+	int (*print)(va_list arg);
 }checker_t;
 
 
