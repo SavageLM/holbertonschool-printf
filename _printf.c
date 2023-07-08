@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			if (format[i] == '%')
-				nump += _putchar(format[i])i;
+				nump += _putchar(format[i]);
 			j = 0;
 			while (functions[j].type != NULL)
 			{
