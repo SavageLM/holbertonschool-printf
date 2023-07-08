@@ -27,25 +27,31 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	while (format && format[i])
 	{
-		j = 0;
-
-		while (j < 6)
+		if (format[i] == '%')
 		{
-			if (*format == *functions[j].type)
+			i++;
+			j = 0;
+			while (functions[j].type != NULL)
 			{
-				nump = functions[j].print(args);
+				if (format[i] == *functions[j].type)
+				{
+					nump += functions[j].print(args);
+					break;
+				}
+				j++;
 			}
-
-			j++;
+			if (functions[j].type == NULL)
+				return (-1);
 		}
-
+		else
+		{
+			_putchar(format[i]);
+			nump++;
+		}
 		i++;
 	}
-
 	va_end(args);
-
 	return (nump);
 }
