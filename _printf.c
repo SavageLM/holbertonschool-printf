@@ -18,24 +18,25 @@ int _printf(const char *format, ...)
 		{"i", print_num},
 		{"d", print_num},
 		{"s", print_string},
-		{"%", print_percent}
+		{"%", print_percent},
+		{NULL, NULL}
 	};
-	unsigned int i = 0, j = 0, nump =0;
+	unsigned int i = 0, j = 0, nump = 0;
 
 	va_start(args, format);
 
 	if (format == NULL)
 		return (-1);
 
-	while ((format != NULL) && (format [i]))
+	while (format && format[i])
 	{
 		j = 0;
 
-		while (j < 5)
+		while (j < 6)
 		{
 			if (format[i] == *functions[j].type)
 			{
-				functions[j].print(args);
+				nump = functions[j].print(args);
 			}
 
 			j++;
@@ -43,8 +44,6 @@ int _printf(const char *format, ...)
 
 		i++;
 	}
-
-	nump = print_percent(args);
 
 	va_end(args);
 

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -23,9 +24,9 @@ int _putchar(char c)
 
 int print_char(va_list arg)
 {
-	char *letter;
+	char *letter = 0;
 
-	*letter = va_arg(arg, char);
+	*letter = va_arg(arg, int);
 
 	_putchar(*letter);
 
@@ -47,9 +48,9 @@ int print_string(va_list arg)
 
 	if (str != NULL)
 	{
-		while (*str[i])
+		while (str[i])
 		{
-			_putchar(*str);
+			_putchar(str[i]);
 			i++;
 		}
 
@@ -74,17 +75,18 @@ int print_string(va_list arg)
 
 int print_percent(va_list arg)
 {
-	char *percent;
+	char *percent = 0;
 	int i = 0, c = 0;
 
-	percent = va_arg(arg, int);
+	*percent = va_arg(arg, int);
 
 	while (percent[i])
 	{
-		if ((percent[i - 1] == "%") && (percent[i] == "%"))
-			_putchar("%");
-		if ((percent[i - 1] == "/") && (percent[i] == "%"))
-			_putchar("%");
+		if ((percent[i - 1] == '%') && (percent[i] == '%'))
+			_putchar('%');
+		if ((percent[i - 1] == '/') && (percent[i] == '%'))
+			_putchar('%');
+		i++;
 		c++;
 	}
 
