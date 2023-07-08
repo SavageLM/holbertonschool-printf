@@ -10,7 +10,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _putchar(char *c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
@@ -25,7 +25,7 @@ int print_char(va_list arg)
 {
 	char *letter;
 
-	letter = va_list(arg, int);
+	letter = va_args(arg, int);
 
 	_putchar(letter);
 
@@ -43,7 +43,7 @@ int print_string(va_list arg)
 	char *str;
 	int i = 0;
 
-	str = va_list (arg, char*);
+	str = va_args(arg, char*);
 
 	if (str != NULL)
 	{
@@ -77,7 +77,7 @@ int print_percent(va_list arg)
 	char *percent;
 	int i = 0;
 
-	percent = va_list(arg, int);
+	percent = va_args(arg, int);
 
 	while (percent[i])
 	{
