@@ -18,7 +18,6 @@ int _printf(const char *format, ...)
 		{"i", print_num},
 		{"d", print_num},
 		{"s", print_string},
-		{"%", '37'},
 		{NULL, NULL}
 	};
 	unsigned int i = 0, j = 0, nump = 0;
@@ -33,7 +32,7 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			if (format[i] == '%')
-				nump += 1;
+				nump += _putchar(format[i])i;
 			j = 0;
 			while (functions[j].type != NULL)
 			{
