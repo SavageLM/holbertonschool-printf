@@ -1,1 +1,38 @@
 THis is the man page for the _printf function. This is place holder text
+.TH _printf 1 "7 July 23"
+.SH NAME
+_printf /- Function that will replicate the std printf function.
+
+.SH SYNOPSIS
+
+.SH DESCRIPTION
+   The function _printf() produces output according to
+   a format as described below. The function _printf()
+   writes output to stdout, the standard output stream.
+   These functions write the output under the control of a 
+   format string that specifies how subsequent arguments
+   are converted for output. The format is a character	
+   string and is composed of zero or more directives.
+
+.SH RETURN VALUES
+   This function returns the number of characters printed. 
+   This function returns a negative value if an error occurs.
+
+.SH Options
+
+.RS
+.nf
+- %c - Prints a single character.
+- %s - Prints the argument as a string.
+- %% - Prints a single percent sign.
+- %i / %d - Prints signed decimal integer.
+.RE
+
+.SH "SEE ALSO"
+
+.SH BUGS
+Eww.
+
+.SH AUTHORS
+
+Luke and Jess
