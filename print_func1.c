@@ -84,7 +84,7 @@ int print_percent(va_list arg)
 		if ((percent[i - 1] == '%') && (percent[i] == '%'))
 			_putchar("%");
 		if ((percent[i - 1] == "/") && (percent[i] == "%"))
-			_putchar("%");
+			_putchar('%');
 		i++;
 		c++;
 	}
