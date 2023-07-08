@@ -77,7 +77,7 @@ int print_percent(va_list arg)
 	char *percent;
 	int i = 0, c = 0;
 
-	percent = va_arg(arg, int);
+	*percent = va_arg(arg, int);
 
 	while (percent[i])
 	{
