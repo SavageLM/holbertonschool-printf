@@ -24,11 +24,11 @@ int _putchar(char c)
 
 int print_char(va_list arg)
 {
-	char *letter = 0;
+	char letter;
 
-	*letter = va_arg(arg, int);
+	letter = va_arg(arg, int);
 
-	_putchar(*letter);
+	_putchar(letter);
 
 	return (1);
 }
