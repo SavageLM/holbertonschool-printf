@@ -74,7 +74,7 @@ int print_string(va_list arg)
 
 int print_percent(va_list arg)
 {
-	char *percent;
+	char *percent = 0;
 	int i = 0, c = 0;
 
 	*percent = va_arg(arg, int);
@@ -82,8 +82,8 @@ int print_percent(va_list arg)
 	while (percent[i])
 	{
 		if ((percent[i - 1] == '%') && (percent[i] == '%'))
-			_putchar("%");
-		if ((percent[i - 1] == "/") && (percent[i] == "%"))
+			_putchar('%');
+		if ((percent[i - 1] == '/') && (percent[i] == '%'))
 			_putchar('%');
 		i++;
 		c++;
