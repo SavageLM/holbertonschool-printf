@@ -53,6 +53,7 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[i]);
 			nump++;
+		}
 	}
 
 	va_end(args);
