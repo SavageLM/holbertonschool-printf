@@ -46,9 +46,10 @@ int print_string(va_list arg)
 
 	str = va_arg(arg, char*);
 
-	if (str != NULL)
-	{
-		while (str[i])
+	if (str == NULL)
+		s = "(null)";
+
+		while (str[i] != '/0')
 		{
 			_putchar(str[i]);
 			i++;
@@ -57,15 +58,6 @@ int print_string(va_list arg)
 		return (i);
 	}
 
-	_putchar('(');
-	_putchar('N');
-	_putchar('U');
-	_putchar('L');
-	_putchar('L');
-	_putchar(')');
-
-	return (6);
-}
 
 /**
  * print_percent- prints percent signs
