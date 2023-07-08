@@ -48,5 +48,5 @@ void recursenum(int n)
 	if (num / 10)
 		recursenum(num);
 
-	_putchar((num % 10) +0);
+	_putchar((num % 10) + 0);
 }
