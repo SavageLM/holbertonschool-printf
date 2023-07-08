@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 
 		while (j < 6)
 		{
-			if (format == *functions[j].type)
+			if (*format == *functions[j].type)
 			{
 				nump = functions[j].print(args);
 			}
