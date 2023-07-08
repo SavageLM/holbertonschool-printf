@@ -1,4 +1,3 @@
-This is the README. This is a place holder for later.
 # **Project** `_printf`
 
 ## Introduction
@@ -11,22 +10,22 @@ This is the README. This is a place holder for later.
 - Not allowed to use global variables
 - No more than 5 functions per file
 
-### Prototype
+##### Prototype
 `int _printf(const char *format, ...);`
 
-### Compilation
+##### Compilation
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
 
 ### Repo Files
-| **File** | **Description** |
-|----------|-----------------|
-|README.md|Project info|
-_printf-man|Man page|
-printf.h|Header file|
-_printf.c|source/main|
-print_func-1.c||
-print_func-2.c||
+| **File** | *__Description__* |
+|----------|----------------:|
+|[README.md](https://github.com/SavageLM/holbertonschool-printf/blob/master/README.md)|Project info|
+|[_printf-man](https://github.com/SavageLM/holbertonschool-printf/blob/master/_printf-man)|Man page|
+|[printf.h](https://github.com/SavageLM/holbertonschool-printf/blob/master/printf.h)|Header file|
+|[_printf.c](https://github.com/SavageLM/holbertonschool-printf/blob/master/_printf.c)|source/main|
+|print_func-1.c||
+|print_func-2.c||
 
 ### Flowchart
-
-*Created by Logan and Jess*
+***
+*Created by __Logan Savage__ & __Jess Dison__*
