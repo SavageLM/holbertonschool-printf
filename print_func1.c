@@ -58,10 +58,10 @@ int print_string(va_list arg)
 	}
 	
 	_putchar('(');
-	_putchar('N');
-	_putchar('U');
-	_putchar('L');
-	_putchar('L');
+	_putchar('n');
+	_putchar('u');
+	_putchar('l');
+	_putchar('l');
 	_putchar(')');
 
 	return (6);
