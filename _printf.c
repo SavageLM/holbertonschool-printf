@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		{"i", print_num},
 		{"d", print_num},
 		{"s", print_string},
-		{"%", '%'},
+		{"%", '37'},
 		{NULL, NULL}
 	};
 	unsigned int i = 0, j = 0, nump = 0;
