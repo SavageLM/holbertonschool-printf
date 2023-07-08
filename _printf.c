@@ -27,14 +27,12 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	while (format && format[i])
 	{
 		if (format[i] == '%')
 		{
 			i++;
 			j = 0;
-			
 			while (functions[j].type != NULL)
 			{
 				if (format[i] == *functions[j].type)
@@ -44,19 +42,15 @@ int _printf(const char *format, ...)
 				}
 				j++;
 			}
-
 			if (functions[j].type == NULL)
 				return (-1);
 		}
-
 		else
 		{
 			_putchar(format[i]);
 			nump++;
 		}
 	}
-
 	va_end(args);
-
 	return (nump);
 }
