@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{NULL, NULL}
 	};
-	unsigned int i = 0, j = 0 nump = 0;
+	unsigned int i = 0, j = 0, nump = 0;
 
 	va_start(args, format);
 
