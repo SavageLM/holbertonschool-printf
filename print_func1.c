@@ -25,7 +25,7 @@ int print_char(va_list arg)
 {
 	char *letter;
 
-	*letter = va_arg(arg, unsigned char);
+	*letter = va_arg(arg, int);
 
 	_putchar(*letter);
 
