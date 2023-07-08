@@ -46,10 +46,9 @@ int print_string(va_list arg)
 
 	str = va_arg(arg, char*);
 
-	if (str == NULL)
-		s = "(null)";
+	if (str != NULL)
 
-		while (str[i] != '/0')
+		while (str[i])
 		{
 			_putchar(str[i]);
 			i++;
@@ -57,6 +56,16 @@ int print_string(va_list arg)
 
 		return (i);
 	}
+	
+	_putchar('(');
+	_putchar('N');
+	_putchar('U');
+	_putchar('L');
+	_putchar('L');
+	_putchar(')');
+
+	return (6);
+}
 
 
 /**
