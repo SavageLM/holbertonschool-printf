@@ -23,7 +23,7 @@ int _putchar(char c)
 
 int print_char(va_list arg)
 {
-	char *letter;
+	char *letter = 0;
 
 	*letter = va_arg(arg, int);
 
