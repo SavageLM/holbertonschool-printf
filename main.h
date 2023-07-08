@@ -7,8 +7,11 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-void print_char(va_list arg);
-void print_string(char *str);
+int print_char(va_list arg);
+int print_string(va_list arg);
+int print_percent(va_list arg);
+int print_num(va_list arg);
+void recursenum(int n);
 
 /*Typedef and structure used*/
 typedef struct checker
