@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{"%", print_percent}
 	};
-	unsigned int i = 0, j = 0;
+	unsigned int i = 0, j = 0, nump =0;
 
 	va_start(args, format);
 
@@ -45,6 +45,8 @@ int _printf(const char *format, ...)
 	}
 
 	va_end(args);
+
+	nump = print_percent(format, args);
 
 	return (nump);
 }
