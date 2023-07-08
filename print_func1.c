@@ -47,7 +47,7 @@ int print_string(va_list arg)
 	str = va_arg(arg, char*);
 
 	if (str != NULL)
-
+	{
 		while (str[i])
 		{
 			_putchar(str[i]);
