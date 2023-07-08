@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 			i++;
 			j = 0;
 			
-			while (funtions[j].type != NULL)
+			while (functions[j].type != NULL)
 			{
 				if (format[i] == *functions[j].type)
 				{
