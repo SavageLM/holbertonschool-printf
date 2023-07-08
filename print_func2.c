@@ -14,7 +14,7 @@ int print_num(va_list arg)
 	unsigned int num = 0;
 	int pc = 1, tmp;
 
-	num = va_args(arg, int);
+	num = va_arg(arg, int);
 	tmp = num;
 
 	if (tmp < 0)

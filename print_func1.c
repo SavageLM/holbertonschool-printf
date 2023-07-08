@@ -25,7 +25,7 @@ int print_char(va_list arg)
 {
 	char *letter;
 
-	letter = va_args(arg, int);
+	letter = va_arg(arg, int);
 
 	_putchar(letter);
 
@@ -43,7 +43,7 @@ int print_string(va_list arg)
 	char *str;
 	int i = 0;
 
-	str = va_args(arg, char*);
+	str = va_arg(arg, char*);
 
 	if (str != NULL)
 	{
@@ -77,7 +77,7 @@ int print_percent(va_list arg)
 	char *percent;
 	int i = 0;
 
-	percent = va_args(arg, int);
+	percent = va_arg(arg, int);
 
 	while (percent[i])
 	{
