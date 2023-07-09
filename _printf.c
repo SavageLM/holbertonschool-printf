@@ -36,6 +36,11 @@ int _printf(const char *format, ...)
 			if (format[i] == '%')
 				nump += _putchar(format[i]);
 			j = 0;
+<<<<<<< HEAD
+=======
+			if (format[i] == '\0')
+				return (-1);
+>>>>>>> parent of b32c50e... Adjusting  nump
 			while (functions[j].type != NULL)
 			{
 				if (format[i] == *functions[j].type)
