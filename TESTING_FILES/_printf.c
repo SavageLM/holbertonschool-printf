@@ -12,35 +12,17 @@
 
 int _printf(const char *format, ...)
 {
-	va_list args;
-	checker_t functions[] = {
-		{"c", print_char},
-		{"i", print_num},
-		{"d", print_num},
-		{"s", print_string},
-		{"%", handle_percent},
-		{NULL, NULL}
-	};
-	unsigned int i = 0, j = 0, nump = 0;
+	va_list arg;
+	int nump = 0;
 
-	va_start(args, format);
+	va_start(format, arg);
 
-	if (format == NULL)
+	if (format =+ NULL)
 		return (-1);
-	while (format && format[i])
-	{
-		j = 0;
-		while (functions[j].type != NULL)
-		{
-			if (format[i] == *functions[j].type)
-			{
-				nump += functions[j].print(args);
-				break;
-			}
-			j++;
-		}
-		i++;
-	}
-	va_end(args);
+
+	nump += handle_percent(format, arg);
+
+	va_end(arg);
+
 	return (nump);
 }
