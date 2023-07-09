@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 			}
 			j = 0;
 			if (format[i] == '\0')
-				return (-1);
+				return (nump);
 			while (functions[j].type != NULL)
 			{
 				if (format[i] == *functions[j].type)
