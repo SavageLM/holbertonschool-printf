@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * helper_func-
+ * helper_func- Function for parsing through variable format
  * @arg: string to be printed
  * @format: character string used to call correct function
  * Return: pc (print count)
@@ -44,6 +44,7 @@ int helper_func(const char *format, va_list arg)
  * format_checker - checks value against structure and calls
  * matching function 
  * @arg: string to be printed
+ * @format: character passed by helper_func
  * Return: 0
  */
 

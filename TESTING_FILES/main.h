@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <limits.h>
 
 /* List of prototypes and functions to use*/
 

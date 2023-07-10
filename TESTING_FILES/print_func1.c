@@ -46,6 +46,9 @@ int print_string(va_list arg)
 
 	str = va_arg(arg, char*);
 
+	if(*str == '\0')
+		return(0);
+
 	if (str != NULL)
 	{
 		while (str[i])
