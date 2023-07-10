@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -43,10 +44,13 @@ int print_num(va_list arg)
 
 void recursenum(int n)
 {
-	unsigned int num = n;
+	unsigned int num = n, nums = 0;
 
 	if (num / 10)
-		recursenum(num);
+	{
+		nums = (num / 10);
+		recursenum(nums);
+	}
 
-	_putchar((num % 10) + 0);
+	_putchar((num % 10) + '0');
 }
