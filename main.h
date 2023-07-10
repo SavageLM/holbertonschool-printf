@@ -12,7 +12,7 @@ int print_string(va_list arg);
 int print_percent(va_list arg);
 int print_num(va_list arg);
 void recursenum(int n);
-int handle_percent(const char *format, va_list arg);
+int helper_func(const char *format, va_list arg);
 int format_checker(char format, va_list arg);
 
 /*Typedef and structure used*/
