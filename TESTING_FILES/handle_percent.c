@@ -11,7 +11,7 @@
 
 int handle_percent(const char *format, va_list arg)
 {
-	int i = 0, pc = 0;
+	int i = 0, d = 0, pc = 0;
 
 	while (format && format[i])
 	{
@@ -23,14 +23,14 @@ int handle_percent(const char *format, va_list arg)
 			while (format[i] == ' ')
 				i++;
 			if (format[i] == '%')
-				pc += _putchar(format[i]);
-			if (format_checker(format[i], arg) == 0)
+				_putchar(format[i]);
+			d = format_checker(format[i], arg);
+			if (d == 0)
 			{
 				pc += _putchar('%');
 				pc += _putchar(format[i]);
 			}
-			else
-				format_checker(format[i], arg);
+			pc += d;
 		}
 		else 
 			pc += _putchar(format[i]);
