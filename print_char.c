@@ -18,6 +18,6 @@ int print_char(va_list arg)
 
 	_putchar(letter);
 
-        return (1);
+	return (1);
 }
 
