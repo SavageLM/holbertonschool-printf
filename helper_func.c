@@ -32,7 +32,7 @@ int helper_func(const char *format, va_list arg)
 			}
 			pc += d;
 		}
-		else 
+		else
 			pc += _putchar(format[i]);
 		i++;
 	}
