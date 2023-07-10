@@ -9,7 +9,7 @@
  * Return: pc (print count)
  */
 
-int handle_percent(const char *format, va_list arg)
+int helper_func(const char *format, va_list arg)
 {
 	int i = 0, pc = 0;
 
