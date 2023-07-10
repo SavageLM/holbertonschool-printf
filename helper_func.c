@@ -5,6 +5,7 @@
 
 /**
  * helper_func-
+ * @arg: string to be printed
  * @format: character string used to call correct function
  * Return: pc (print count)
  */
@@ -38,6 +39,13 @@ int helper_func(const char *format, va_list arg)
 	}
 	return (pc);
 }
+
+/**
+ * format_checker - checks value against structure and calls
+ * matching function 
+ * @arg: string to be printed
+ * Return: 0
+ */
 
 int format_checker(char format, va_list arg)
 {
