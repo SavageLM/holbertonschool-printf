@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 
-	nump += handle_percent(format, arg);
+	nump += helper_func(format, arg);
 
 	va_end(arg);
 
