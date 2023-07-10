@@ -4,12 +4,12 @@
 #include "main.h"
 
 /**
- * handle_percent-
+ * helper_func-
  * @format: character string used to call correct function
  * Return: pc (print count)
  */
 
-int handle_percent(const char *format, va_list arg)
+int helper_func(const char *format, va_list arg)
 {
 	int i = 0, d = 0, pc = 0;
 
