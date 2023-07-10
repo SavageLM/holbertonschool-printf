@@ -45,7 +45,6 @@ int _printf(const char *format, ...)
 				if (format[i] == *functions[j].type)
 				{
 					nump += functions[j].print(args);
-					break;
 				}
 				j++;
 			}

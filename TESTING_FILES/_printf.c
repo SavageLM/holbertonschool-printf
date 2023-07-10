@@ -15,9 +15,9 @@ int _printf(const char *format, ...)
 	va_list arg;
 	int nump = 0;
 
-	va_start(format, arg);
+	va_start(arg, format);
 
-	if (format =+ NULL)
+	if (format == NULL)
 		return (-1);
 
 	nump += handle_percent(format, arg);

@@ -30,16 +30,16 @@ int handle_percent(const char *format, va_list arg)
 				pc += _putchar(format[i]);
 			}
 			else
-				pc += format_checker(format[i], arg);
+				format_checker(format[i], arg);
 		}
 		else 
 			pc += _putchar(format[i]);
-		i++
+		i++;
 	}
 	return (pc);
 }
 
-int format_checker(const char *format, va_list arg)
+int format_checker(char format, va_list arg)
 {
 		checker_t functions[] = {
 		{"c", print_char},
@@ -51,13 +51,13 @@ int format_checker(const char *format, va_list arg)
 
 		int i = 0, pc = 0;
 
-		if (format[i] =='%')
+		if (format == '%')
 			return (1);
-		while (funtctions[i].type)
+		while (functions[i].type)
 		{
-			if (format == *funtions[i].type)
+			if (format == *functions[i].type)
 			{
-				pc += funtcions[i].print(arg);
+				pc += functions[i].print(arg);
 				return (pc);
 			}
 			i++;
