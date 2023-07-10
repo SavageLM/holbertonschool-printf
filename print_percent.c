@@ -17,15 +17,15 @@ int print_percent(va_list arg)
 
 	*percent = va_arg(arg, int);
 
-        while (percent[i])
-        {
+	while (percent[i])
+	{
                 if ((percent[i - 1] == '%') && (percent[i] == '%'))
                         _putchar('%');
                 if ((percent[i - 1] == '/') && (percent[i] == '%'))
                         _putchar('%');
                 i++;
                 c++;
-        }
+	}
 
         return (c);
 }
