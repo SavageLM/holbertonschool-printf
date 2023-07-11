@@ -21,8 +21,6 @@ int helper_func(const char *format, va_list arg)
 			if (format[i + 1] == '\0')
 				return (-1);
 			i++;
-			while (format[i] == ' ')
-				i++;
 			if (format[i] == '%')
 				_putchar(format[i]);
 			d = format_checker(format[i], arg);

@@ -42,11 +42,12 @@ int print_char(va_list arg)
 int print_string(va_list arg)
 {
 	char *str;
-	int i = 0;
+	int i = 0, len;
 
 	str = va_arg(arg, char*);
+	len = va_arg(arg, int);
 
-	if(*str == '\0')
+	if(len == 1)
 		return(0);
 
 	if (str != NULL)
