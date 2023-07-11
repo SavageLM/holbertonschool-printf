@@ -42,7 +42,7 @@ int helper_func(const char *format, va_list arg)
 
 /**
  * format_checker - checks value against structure and calls
- * matching function 
+ * matching function
  * @arg: string to be printed
  * @format: character passed by helper_func
  * Return: 0

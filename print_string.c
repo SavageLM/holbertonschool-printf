@@ -12,10 +12,10 @@
 
 int print_string(va_list arg)
 {
-        char *str;
-        int i = 0;
-
-        str = va_arg(arg, char*);
+	char *str;
+	int i = 0;
+	
+	str = va_arg(arg, char*);
 
         if (str != NULL)
         {

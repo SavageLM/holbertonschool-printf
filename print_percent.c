@@ -26,6 +26,5 @@ int print_percent(va_list arg)
 		i++;
 		c++;
 	}
-
-        return (c);
+	return (c);
 }
