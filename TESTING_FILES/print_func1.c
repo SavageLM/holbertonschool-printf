@@ -42,16 +42,15 @@ int print_char(va_list arg)
 int print_string(va_list arg)
 {
 	char *str;
-	int i = 0, len;
+	int i = 0;
 
 	str = va_arg(arg, char*);
-	len = va_arg(arg, int);
-
-	if(len == 1)
-		return(0);
 
 	if (str != NULL)
 	{
+		if (*str == '\0')
+			return (-1);
+
 		while (str[i])
 		{
 			_putchar(str[i]);

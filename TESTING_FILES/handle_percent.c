@@ -28,6 +28,8 @@ int handle_percent(const char *format, va_list arg)
 				pc += _putchar('%');
 				pc += _putchar(format[i]);
 			}
+			if (d == -1)
+				d = 0;
 			pc += d;
 		}
 		else 
