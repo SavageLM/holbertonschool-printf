@@ -14,9 +14,9 @@ int print_string(va_list arg)
 {
 	char *str;
 	int i = 0;
-	
+
 	str = va_arg(arg, char*);
-	
+
 	if (str != NULL)
 	{
 		while (str[i])
@@ -24,7 +24,7 @@ int print_string(va_list arg)
 			_putchar(str[i]);
 			i++;
 		}
-		
+
 		return (i);
 	}
 
@@ -34,6 +34,6 @@ int print_string(va_list arg)
 	_putchar('l');
 	_putchar('l');
 	_putchar(')');
-	
+
 	return (6);
 }
