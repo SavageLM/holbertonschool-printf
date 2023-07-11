@@ -26,14 +26,14 @@ int print_string(va_list arg)
 		}
 		
 		return (i);
-        }
+	}
 
-        _putchar('(');
-        _putchar('n');
-        _putchar('u');
-        _putchar('l');
-        _putchar('l');
-        _putchar(')');
-
-        return (6);
+	_putchar('(');
+	_putchar('n');
+	_putchar('u');
+	_putchar('l');
+	_putchar('l');
+	_putchar(')');
+	
+	return (6);
 }
