@@ -21,7 +21,7 @@ int print_string(va_list arg)
 	{
 		while (str[i])
 		{
-			_putchar(str[i])
+			_putchar(str[i]);
 			i++;
 		}
 		
