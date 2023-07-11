@@ -16,16 +16,16 @@ int print_string(va_list arg)
 	int i = 0;
 	
 	str = va_arg(arg, char*);
-
-        if (str != NULL)
-        {
-                while (str[i])
-                {
-                        _putchar(str[i]);
-                        i++;
-                }
-
-                return (i);
+	
+	if (str != NULL)
+	{
+		while (str[i])
+		{
+			_putchar(str[i])
+			i++;
+		}
+		
+		return (i);
         }
 
         _putchar('(');
