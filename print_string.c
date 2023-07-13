@@ -19,6 +19,9 @@ int print_string(va_list arg)
 
 	if (str != NULL)
 	{
+		if (*str == '\0')
+			return (-1);
+
 		while (str[i])
 		{
 			_putchar(str[i]);

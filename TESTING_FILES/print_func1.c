@@ -46,11 +46,11 @@ int print_string(va_list arg)
 
 	str = va_arg(arg, char*);
 
-	if(*str == '\0')
-		return(0);
-
 	if (str != NULL)
 	{
+		if (*str == '\0')
+			return (-1);
+
 		while (str[i])
 		{
 			_putchar(str[i]);
