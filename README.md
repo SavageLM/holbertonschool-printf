@@ -20,11 +20,13 @@
 | **File** | *__Description__* |
 |----------|----------------:|
 |[README.md](https://github.com/SavageLM/holbertonschool-printf/blob/master/README.md)|Project info|
-|[_printf-man](https://github.com/SavageLM/holbertonschool-printf/blob/master/_printf-man)|Man page|
+|[man_3_printf](https://github.com/SavageLM/holbertonschool-printf/blob/master/man_3_printf)|Man page|
 |[printf.h](https://github.com/SavageLM/holbertonschool-printf/blob/master/printf.h)|Header file|
 |[_printf.c](https://github.com/SavageLM/holbertonschool-printf/blob/master/_printf.c)|source/main|
-|print_func-1.c||
-|print_func-2.c||
+|helper_func.c|Function for parsing the 'format' argument|
+|print_char|Function for print a character|
+|print_string|Function for print a string|
+|_putchar|Function replicate putchar|
 
 ### Flowchart
 ***
