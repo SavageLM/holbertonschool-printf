@@ -2,6 +2,11 @@
 .SH NAME
 _printf /- Function that will replicate the std printf function.
 .SH SYNOPSIS
+.nf
+.B #include "main.h"
+.PP
+.BI "int _printf(const char *" format ", ...);"
+.fi
 .SH DESCRIPTION
    The function _printf() produces output according to
    a format as described below. The function _printf()
@@ -12,16 +17,18 @@ _printf /- Function that will replicate the std printf function.
    string and is composed of zero or more directives.
 .SH RETURN VALUES
    This function returns the number of characters printed. 
-   This function returns a negative value if an error occurs.
+   This function returns a negative value if an error 
+   occurs.
 
 .SH Options
 
 .RS
 .nf
+Specifiers
 - %c - Prints a single character.
 - %s - Prints the argument as a string.
-- %% - Prints a single percent sign.
-- %i / %d - Prints signed decimal integer.
+- %i - Prints signed decimal integer. 
+- %d - Prints signed decimal integer.
 .RE
 
 .SH "SEE ALSO"
@@ -31,4 +38,4 @@ Eww.
 
 .SH AUTHORS
 
-Luke and Jess
+Logan and Jess
