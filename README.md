@@ -14,7 +14,7 @@ Download files or copy the clone URL
 ![github_wheretodownload](https://github.com/SavageLM/holbertonschool-printf/assets/126801159/8a84e94d-8448-48f4-9bd5-9b19e203ab5f)
 
 
-To clone into repository, go to terminal and type the following
+To clone into repository, go to terminal and type the following:
 
 ```
 git clone [copy URL]
@@ -96,13 +96,16 @@ int main(void)
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 
-### Example
+### Example for use of function
 ```
-code drop
+_printf("%s: %d", "Commits made", "103")
 ```
+Results would look like:
+> Commits made: 103
 ***
 ### Flowchart of how the program uses all the different functions and how we check for the specifiers required
-![Workflow for _printf](https://github.com/SavageLM/holbertonschool-printf/assets/126801159/95e71c80-6a4c-42db-9d44-0e3c1210c0b6)
+![Workflow for _printf](https://github.com/SavageLM/holbertonschool-printf/assets/126801159/f3bb93cb-cfd0-4d30-be71-109d54d1fb84)
+
 
 
 ***
