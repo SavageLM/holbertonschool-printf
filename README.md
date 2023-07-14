@@ -18,7 +18,7 @@ Download files or copy the clone URL
 To clone into repository, go to terminal and type the following
 
 ```
-git clone [copy URL]`
+git clone [copy URL]
 ```
 ### General Requirements
 - Allowed editors: vi, vim, emacs
@@ -29,7 +29,7 @@ git clone [copy URL]`
 
 ##### Prototype
 ```
-int _printf(const char *format, ...);`
+int _printf(const char *format, ...);
 ```
 ### Repo Files
 | **File** | **Description** |
@@ -93,7 +93,9 @@ int main(void)
 ```
 
 ##### Use this to compile files
-`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
+```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+```
 
 ### Example
 ```
