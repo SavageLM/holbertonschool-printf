@@ -32,10 +32,18 @@ Specifiers
 .RE
 
 .SH "SEE ALSO"
+_printf.c
+_putchar.c
+helper_func.c
+main.h
+man_3_printf
+print_char.c
+print_num.c
+print_string.c
 
 .SH BUGS
 Eww.
 
 .SH AUTHORS
 
-Logan and Jess
+Logan Savage and Jess Dison
