@@ -4,11 +4,11 @@
 > Hey there:) Thanks for checking out our first group project. For this we are creating our own printf function following the guidelines provided and the other files listed below.
 
 ## What is `_printf`?
-Using a struct data type, we check for matches within our string called `format` against our conversion specifiers. This is done in order to determine if value is to be printed or evaluated futher. This function `_printf` will continue to print until it reaches the end of our `format` string at which time the program will be completed.
+For this project we have recreated our own printf function. See the [printf man page](https://man7.org/linux/man-pages/man3/printf.3.html) to learn more about the original function. Using a struct data type, we check for matches within our string called `format` against our conversion specifiers. This is done in order to determine if value is to be printed or evaluated futher. This function `_printf` will continue to print until it reaches the end of our `format` string at which time the program will be completed.
 
 ## How to download
 ***
-[Go to](https://github.com/SavageLM/holbertonschool-printf)
+Go to (https://github.com/SavageLM/holbertonschool-printf)
 
 Download files or copy the clone URL
 
