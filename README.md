@@ -7,8 +7,7 @@
 For this project we have recreated our own printf function. See the [printf man page](https://man7.org/linux/man-pages/man3/printf.3.html) to learn more about the original function. Using a struct data type, we check for matches within our string called `format` against our conversion specifiers. This is done in order to determine if value is to be printed or evaluated futher. This function `_printf` will continue to print until it reaches the end of our `format` string at which time the program will be completed.
 
 ## How to download
-***
-Go to (https://github.com/SavageLM/holbertonschool-printf)
+Go to https://github.com/SavageLM/holbertonschool-printf
 
 Download files or copy the clone URL
 
@@ -35,7 +34,7 @@ int _printf(const char *format, ...);
 | **File** | **Description** |
 |----------|----------------:|
 |[README.md](https://github.com/SavageLM/holbertonschool-printf/blob/master/README.md)|Information and layout of project|
-|[man_3_printf](https://github.com/SavageLM/holbertonschool-printf/blob/master/_printf-man)|Manual page with more detailed information|
+|[man_3_printf](https://github.com/SavageLM/holbertonschool-printf/blob/master/man_3_printf)|Manual page with more detailed information|
 |[main.h](https://github.com/SavageLM/holbertonschool-printf/blob/master/main.h)|Header file that includes prototypes, functions, and structure used|
 |[_printf.c](https://github.com/SavageLM/holbertonschool-printf/blob/master/_printf.c)|File that contains the source code|
 |[helper_func.c](https://github.com/SavageLM/holbertonschool-printf/blob/master/helper_func.c)|Needed for parsing through `format` argument|
